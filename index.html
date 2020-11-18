@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tip Calc</title>
+    <!--CSS FILE-->
+</head>
+<body>
+    <h1>
+        Tip Calculator
+    </h1>
+    
+    <form id="calcBody">
+        <label for="totalBill">Bill total:</label>
+        <text>$</text>
+        <input type="name" id="totalBill" name="totalBill">
+        <br><br>
+        <label for="preTaxBill">Pre-tax total:</label>
+        <text>$</text>
+        <input type="name" pattern="^\d*(\.\d{0,2})?$" 
+        id= "preTaxBill" name="preTaxBill">
+        <br><br>
+        <label for="tipPercent">Tip Percentage</label>
+        <select name="tipPercent" id="tipPercent">
+            <option value="10">10%</option>
+            <option value="15">15%</option>
+            <option value="18">18%</option>
+            <option selected="selected" value="20">20%</option>
+            <option value="22">22%</option>
+            <option value="25">25%</option>
+            <option value="30">30%</option>
+        </select>
+        <br><br>
+        <label for="totalParty">Split Bill Between:</label>
+        <select name="splitBill" id="totalParty">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+        <br><br>
+        <button type="button" onclick="calcTip()">Calculate</button>
+   </form>
+
+   <br>
+
+   <div id="readout">
+       <h3 id="finalFullTotalAmt">
+           Total bill amount: $xx.xx
+       </h3>
+       <h3 id="myBillAmt">
+           My bill amount: $xx.xx
+       </h3>
+       <h3 id="myPreTip">
+           My pre-tip total: $xx.xx
+       </h3>
+       <h3 id="myTipAmt">
+           My tip total: $xx.xx
+       </h3>
+   </div>
+    <!--JS FILE-->
+    <script src="app.js"></script>
+</body>
+</html>

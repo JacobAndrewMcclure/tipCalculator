@@ -1,0 +1,27 @@
+body {
+    background-color: #250447;
+}
+h1 {
+    text-align: center;
+    color: burlywood;
+}
+#calcBody {
+    color: burlywood;
+    border: 5px solid black;
+    background-color: #042345;
+    text-align: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#readout {
+    color: burlywood;
+    border: 5px solid black;
+    background-color: #042345;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
